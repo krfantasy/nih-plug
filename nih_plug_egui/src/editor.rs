@@ -98,6 +98,7 @@ where
                     ..Default::default()
                 }),
             },
+            egui_baseview::GraphicsConfig::default(),
             state,
             move |egui_ctx, _queue, state| build(egui_ctx, &mut state.write()),
             move |egui_ctx, _queue, state| {
